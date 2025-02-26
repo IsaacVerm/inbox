@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Inbox - Add New Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .nav-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .error-container {
+            color: red;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add New Link</h1>
+    
+    <div class="error-container" id="error-messages">
+        <!-- Error messages will be displayed here -->
+    </div>
+    
+    <form id="link-form">
+        <div class="form-group">
+            <label for="url">URL (required):</label>
+            <input type="text" id="url" name="url" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="why-interesting">Why Interesting (required):</label>
+            <textarea id="why-interesting" name="why_interesting" required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="notes">Notes (optional):</label>
+            <textarea id="notes" name="notes"></textarea>
+        </div>
+        
+        <button type="submit">Save Link</button>
+    </form>
+    
+    <a href="/view" class="nav-link">View All Links</a>
+    
+    <script>
+        // This will be implemented later
+        document.getElementById('link-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Form submission logic will be added later
+            console.log('Form submitted - functionality coming soon');
+        });
+    </script>
+</body>
+</html>
